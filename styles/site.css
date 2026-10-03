@@ -66,3 +66,8 @@ body{line-break:strict}
   .mint-app a.brand-logo .brand-logo-art{transition:none}
   .mint-app a.brand-logo:is(:hover,:focus-visible,:active) .brand-logo-art{transform:none}
 }
+
+/* Language switch between the Japanese site and the English page (2026-10-03). */
+.mint-app .language-link{display:inline-flex;align-items:center;min-height:44px;margin-right:18px;padding-left:18px;border-left:1px solid var(--mint-border);color:var(--mint-muted);font-size:.8125rem;font-weight:600;letter-spacing:.06em;flex-shrink:0}
+.mint-app .language-link:is(:hover,:focus-visible){color:var(--mint-accent)}
+.mint-app .language-link:last-child{margin-right:0}
