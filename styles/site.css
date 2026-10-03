@@ -67,7 +67,8 @@ body{line-break:strict}
   .mint-app a.brand-logo:is(:hover,:focus-visible,:active) .brand-logo-art{transform:none}
 }
 
-/* Language switch between the Japanese site and the English page (2026-10-03). */
-.mint-app .language-link{display:inline-flex;align-items:center;min-height:44px;margin-right:18px;padding-left:18px;border-left:1px solid var(--mint-border);color:var(--mint-muted);font-size:.8125rem;font-weight:600;letter-spacing:.06em;flex-shrink:0}
-.mint-app .language-link:is(:hover,:focus-visible){color:var(--mint-accent)}
-.mint-app .language-link:last-child{margin-right:0}
+
+/* Language link just before the main navigation; the far right stays the contact button (owner, 2026-10-03). */
+.site-header-inner .header-language{display:flex;flex-shrink:0;margin-left:auto}
+/* The same 28px rhythm as the navigation items (the header already spaces items by 13px). */
+.site-header-inner .header-language + .desktop-nav{margin-left:15px}
